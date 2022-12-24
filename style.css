@@ -1,0 +1,212 @@
+/* Убираем стандартные отступы */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	/* Параметры шрифта */
+	font: 13px Arial, sans-serif;
+}
+
+.body {
+	background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+}
+
+/* Название калькулятора */
+
+.name {
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+/* Селектор выбора материала */
+
+.select {
+	position: relative;
+	padding-top: 40px;
+}
+
+.select::after {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+}
+
+.select select {
+	display: block;
+	width: 250px;
+	padding: .75rem 2.5rem .75rem 1rem;
+	background: rgba(0, 0, 0, 0.2);
+	border: 1px solid rgb(80, 80, 80);
+	border-radius: 5px;
+
+	font-size: 15px;
+	color: rgb(49, 48, 48);
+}
+
+.select select:focus {
+	outline: 0;
+	border-color: #ffffff;
+}
+
+/* Тело калькулятора*/
+
+#calculator {
+	width: 600px;
+	height: 100vh;
+	
+	margin: 0 auto;
+	padding: 20px 20px 9px;
+	
+	background: rgb(204, 204, 204);
+	border-radius: 6px;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Строка ввода площади*/
+
+input {
+	width: 100%;
+	height: 55px;
+	padding-left: 10px;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	color: #000000;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	box-shadow:inset 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Вид отделки дома */
+
+.otdelka {
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	border: 1px solid rgb(80, 80, 80);
+	border-radius: 4px;
+}
+
+/* Вид работы */
+
+.vid_raboti {
+	padding-bottom: 5px;
+	width: 15px;
+	height: 15px;
+	
+}
+
+/* Класс дома */
+
+.house_class {
+	margin-top: 10px;
+}
+
+.final_house_fst {
+	padding-right: 140px;
+	float: left;
+	border: none;
+}
+
+/* Поле для вывода итоговой стоимости */
+.top .screen {
+	height: 50px;
+	width: 560px;
+	position: absolute;
+	right: 488px;
+	bottom: 0;
+
+	margin-bottom: 150px;	
+	
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	box-shadow:inset 0px 4px rgba(0, 0, 0, 0.2);
+	
+	
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: left;
+	text-indent: 10px;
+	letter-spacing: 1px;
+}
+
+.top .stoimost_raboti {
+	height: 50px;
+	width: 250px;
+	position: absolute;
+	float:left;
+	bottom: 0;
+	margin-bottom: 240px;	
+	
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	box-shadow:inset 0px 4px rgba(0, 0, 0, 0.2);
+	
+	/* Typography */
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: left;
+	text-indent: 10px;
+	letter-spacing: 1px;
+}
+
+.top .stoimost_materiala {
+	height: 50px;
+	width: 250px;
+	position: absolute;
+	right: 490px;
+	bottom: 0;
+	margin-bottom: 240px;	
+	
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	box-shadow:inset 0px 4px rgba(0, 0, 0, 0.2);
+	
+	/* Typography */
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: left;
+	text-indent: 10px;
+	letter-spacing: 1px;
+}
+/* Кнопка "посчитать" */
+
+.button {
+	position: absolute;
+	bottom: 40px;
+	right: 470px;
+
+	text-decoration: none;
+	display: inline-block;
+	width: 560px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 25px;
+	margin: 10px 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 600;
+	color: #524f4e;
+	background: white;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	transition: .3s;
+}
+
+.button:hover {
+	background: #2EE59D;
+	box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+	color: white;
+	transform: translateY(-7px);
+}
