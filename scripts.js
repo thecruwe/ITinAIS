@@ -88,4 +88,5 @@ function allres() {
     area2.innerHTML = sel2 + ' руб. - работа';
     area1.innerHTML = (sel1 + Number(sel2)) + ' руб. - стоимость строительства частного дома';
     console.log(sel1 + sel2);
+    document.getElementById("yardage").value="";
 }
