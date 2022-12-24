@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Калькулятор строительства частного дома</title>
+</head>
+<body>
+    <div id="calculator">
+        <p id="demo"></p>
+        <h1 class="name">Калькулятор строительства частного дома</h1>
+        <!--  -->
+        <form action="#" method="get">
+            <input type="search" name="b" id="yardage" min="20" max="250" placeholder="Введите общую площадь в кв. м.">
+
+<!-- Выбор состояния дома -->
+
+            <div class="otdelka" onchange="fun3()">
+                <div class="final_house_fst">
+                    <p><input id="korobka" type="radio" class="vid_raboti" name="a" value="Korobka">Коробка</p>
+                    <p><input id="chern" type="radio" class="vid_raboti" name="a" value="chern">Черновая отделка</p>
+                </div>
+                <div class="final_house_scn">
+                    <p><input id="podkluch" type="radio" class="vid_raboti" name="a" value="podkluch">Под ключ</p>
+                    <p><input id="snaruj" type="radio" class="vid_raboti" name="a" value="snaruj">С наружн. коммуник.</p>
+                </div>
+                </div>
+
+<!-- Выбор материала дома -->
+
+        <div class="select">
+            <select id="material_house" onchange="fun1()">
+                <option selected value="#">Выберите материал дома</option>
+                <option value="obr">Оцилиндр. бревно</option>
+                <option value="pbr">Профилир. брус</option>
+                <option value="kbr">Клееный брус</option>
+                <option value="lstk">ЛСТК</option>
+                <option value="kir">Кирпич</option>
+                <option value="gbet">Газобетон</option>
+                <option value="dkark">Дерев. каркас</option>
+                <option value="brns">Брус не строг.</option>
+                <option value="brstrg">Брус строганый</option>
+            </select>
+        </div>
+
+<!-- Выбор уровень дома -->
+
+        <div class="select">
+            <select id="house_class" onchange="fun2()">
+                <option value="##">Выберите уровень дома</option>
+                <option value="eco">Эконом</option>
+                <option value="standart">Стандарт</option>
+                <option value="luks">Люкс</option>
+            </select>
+        <img src="./logo.png" width="140px" style="margin-left: 420px; margin-top: -130px;">
+        </div>
+        <div class="top">
+            <div id="area1" class="screen">Стоимость строительства частного дома</div>
+            <div id="area2" class="stoimost_raboti">Стоимость работ</div>
+            <div id="area3" class="stoimost_materiala">Стоимость материалов</div>
+        </div>
+        <button class="button" type="button" onclick="allres();" id="btn">Посчитать</button> <!-- Кнопка посчитать -->
+    </div>
+</body>
+</html>
